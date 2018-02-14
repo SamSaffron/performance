@@ -1,0 +1,790 @@
+Total allocated: 926903 bytes (13665 objects)
+Total retained:  208570 bytes (1587 objects)
+
+allocated memory by gem
+-----------------------------------
+    527293  rubygems
+    399570  master/lib
+        40  other
+
+allocated memory by file
+-----------------------------------
+    527293  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb
+    296720  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb
+     86274  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb
+      3888  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb
+      2784  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri.rb
+      1984  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldap.rb
+      1920  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/mailto.rb
+      1792  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb
+      1656  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc3986_parser.rb
+      1304  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/http.rb
+       624  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/https.rb
+       624  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldaps.rb
+        40  test.rb
+
+allocated memory by location
+-----------------------------------
+    527293  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+     55040  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+     55040  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+     52640  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+     51200  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+     49000  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+     16294  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:509
+     14432  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:349
+     10329  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:505
+      9038  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:506
+      7264  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:343
+      7264  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:519
+      7202  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:510
+      6427  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:511
+      3216  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb:1563
+      3019  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:520
+      2845  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:525
+      2251  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:456
+      2246  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:524
+      1680  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldap.rb:23
+      1680  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/mailto.rb:18
+      1592  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:59
+      1504  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri.rb:97
+      1482  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:458
+      1424  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb:23
+      1295  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:522
+      1237  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:523
+      1224  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:478
+      1176  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:453
+      1168  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/http.rb:23
+      1160  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:544
+      1151  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:526
+      1130  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:519
+      1052  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:527
+      1051  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:451
+      1000  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:518
+       992  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc3986_parser.rb:125
+       970  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:515
+       960  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri.rb:100
+       928  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:344
+       928  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:502
+       920  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:446
+       832  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:521
+       824  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:514
+       712  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:141
+       648  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:65
+       643  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:443
+       584  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/https.rb:18
+       584  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldaps.rb:16
+       584  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:17
+
+allocated memory by class
+-----------------------------------
+    662137  String
+     92664  File
+     71238  Regexp
+     42080  Array
+     37896  Hash
+     15184  Class
+      4680  Module
+       560  MatchData
+       240  Range
+       144  UnboundMethod
+        40  URI::RFC2396_Parser
+        40  URI::RFC3986_Parser
+
+allocated objects by gem
+-----------------------------------
+      6834  master/lib
+      6830  rubygems
+         1  other
+
+allocated objects by file
+-----------------------------------
+      6830  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb
+      6593  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb
+       156  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb
+        21  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri.rb
+        18  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb
+        11  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb
+         9  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldap.rb
+         9  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/mailto.rb
+         6  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc3986_parser.rb
+         5  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/http.rb
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/https.rb
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldaps.rb
+         1  test.rb
+
+allocated objects by location
+-----------------------------------
+      6830  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+      1376  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+      1376  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+      1316  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+      1280  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+      1225  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+        12  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri.rb:100
+         9  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:505
+         9  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:506
+         6  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:515
+         6  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:518
+         6  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:519
+         6  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:520
+         6  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:522
+         6  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:523
+         6  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:524
+         6  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:525
+         6  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:526
+         5  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:521
+         5  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:527
+         4  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb:43
+         4  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:509
+         4  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:510
+         4  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:511
+         4  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:514
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb:23
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb:1563
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/http.rb:23
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldap.rb:23
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/mailto.rb:18
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:153
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:157
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:161
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:165
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:32
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:65
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb:161
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb:222
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb:244
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb:252
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb:262
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb:268
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb:278
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb:284
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/https.rb:18
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldaps.rb:16
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/mailto.rb:164
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/mailto.rb:167
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:113
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:118
+
+allocated objects by class
+-----------------------------------
+     12486  String
+      1046  Array
+        61  Regexp
+        24  Hash
+        20  Class
+        11  File
+         6  Range
+         5  Module
+         2  MatchData
+         2  UnboundMethod
+         1  URI::RFC2396_Parser
+         1  URI::RFC3986_Parser
+
+retained memory by gem
+-----------------------------------
+    136227  master/lib
+     72343  rubygems
+
+retained memory by file
+-----------------------------------
+     72343  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb
+     61200  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb
+     60371  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb
+      3608  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb
+      1944  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldap.rb
+      1800  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/mailto.rb
+      1712  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb
+      1616  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc3986_parser.rb
+      1544  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri.rb
+      1264  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/http.rb
+       584  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/https.rb
+       584  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldaps.rb
+
+retained memory by location
+-----------------------------------
+     72343  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+     18280  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+     14432  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:349
+     12118  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:509
+      7264  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:343
+      7264  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:519
+      5104  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:505
+      5074  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:510
+      4329  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:506
+      4299  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:511
+      3840  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+      3840  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+      3216  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb:1563
+      2251  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:456
+      2069  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:520
+      1908  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:525
+      1680  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldap.rb:23
+      1680  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/mailto.rb:18
+      1617  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:524
+      1592  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:59
+      1504  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri.rb:97
+      1482  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:458
+      1440  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+      1424  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb:23
+      1224  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:478
+      1176  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:453
+      1168  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/http.rb:23
+      1160  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:544
+      1051  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:451
+       992  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc3986_parser.rb:125
+       928  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:344
+       928  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:502
+       920  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:446
+       879  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:522
+       821  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:523
+       735  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:526
+       714  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:519
+       712  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:141
+       664  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:518
+       648  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:65
+       643  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:443
+       636  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:527
+       634  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:515
+       616  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:514
+       584  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/https.rb:18
+       584  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldaps.rb:16
+       584  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:17
+       584  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:521
+       560  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:32
+       544  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:161
+
+retained memory by class
+-----------------------------------
+     84840  String
+     70746  Regexp
+     31616  Hash
+     15184  Class
+      4680  Module
+      1040  Array
+       240  Range
+       144  UnboundMethod
+        40  URI::RFC2396_Parser
+        40  URI::RFC3986_Parser
+
+retained objects by gem
+-----------------------------------
+       833  master/lib
+       754  rubygems
+
+retained objects by file
+-----------------------------------
+       754  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb
+       705  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb
+        79  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb
+        11  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb
+         9  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb
+         8  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldap.rb
+         6  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/mailto.rb
+         5  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc3986_parser.rb
+         4  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/http.rb
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri.rb
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/https.rb
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldaps.rb
+
+retained objects by location
+-----------------------------------
+       754  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+       457  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+        96  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        96  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+        36  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+         4  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb:43
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb:23
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/generic.rb:1563
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/http.rb:23
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldap.rb:23
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/mailto.rb:18
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:153
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:157
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:161
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:165
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:32
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:65
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/https.rb:18
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldaps.rb:16
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:17
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:505
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:506
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:509
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:510
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:511
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:514
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:515
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:518
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:519
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:520
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:521
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:522
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:523
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:524
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:525
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:526
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:544
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:59
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc3986_parser.rb:125
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri.rb:100
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri.rb:97
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:141
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:144
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:19
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:22
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:343
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:349
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:519
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:61
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb:161
+
+retained objects by class
+-----------------------------------
+      1465  String
+        60  Regexp
+        20  Array
+        20  Class
+         7  Hash
+         6  Range
+         5  Module
+         2  UnboundMethod
+         1  URI::RFC2396_Parser
+         1  URI::RFC3986_Parser
+
+
+Allocated String Report
+-----------------------------------
+       418  "    #\n"
+       418  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+       372  "\n"
+       367  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+
+       139  "    end\n"
+       139  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+       137  "0"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri.rb:100
+
+       135  "1"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+       135  "2"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+       135  "3"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+       135  "4"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+       135  "5"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+       135  "6"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+       135  "7"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+       135  "8"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+       135  "9"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+       103  "  #\n"
+       103  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        98  "      end\n"
+        98  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        73  "C"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+
+        72  "a"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb:43
+
+        72  "d"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb:43
+
+        71  "A"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+
+        71  "B"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+
+        71  "D"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+
+        71  "F"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         3  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+
+        71  "c"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+
+        70  "E"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+
+        69  "b"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+
+        69  "e"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+
+        69  "f"
+        33  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+        17  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+
+        45  "#\n"
+        45  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        38  ""
+        38  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        35  "        end\n"
+        35  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        34  "    # == Description\n"
+        34  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        28  "      else\n"
+        28  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        28  "/"
+        23  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+
+        25  "    # == Args\n"
+        25  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        24  "  end\n"
+        24  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        22  "/Users"
+        22  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        22  "/Users/sam"
+        22  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        22  "/Users/sam/.rbenv"
+        22  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        22  "/Users/sam/.rbenv/versions"
+        22  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        22  "/Users/sam/.rbenv/versions/master"
+        22  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        22  "/Users/sam/.rbenv/versions/master/lib"
+        22  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        22  "/Users/sam/.rbenv/versions/master/lib/ruby"
+        22  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        22  "/Users/sam/.rbenv/versions/master/lib/ruby/2.6.0"
+        22  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        21  "/Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri"
+        21  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        19  "    #   require 'uri'\n"
+        19  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        19  "windows-1252"
+        19  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        18  "    # == Usage\n"
+        18  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+        17  "uri/generic"
+        12  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri.rb:106
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ftp.rb:11
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/http.rb:11
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/ldap.rb:15
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/mailto.rb:11
+
+        16  ")"
+        11  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+
+        16  "-"
+        11  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:352
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:353
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:354
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:355
+
+
+Retained String Report
+-----------------------------------
+         2  "\n        (?:\n          (?:\n            //\n            (?:\n              (?:((?:[\\-_.!~*'()a-zA-Z\\d;:&=+$,]|%[a-fA-F\\d]{2})*)@)?       (?# 1: userinfo)\n                ((?:(?:[a-zA-Z0-9\\-.]|%\\h\\h)+|\\d{1"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:478
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:511
+
+         2  "\n        ([a-zA-Z][\\-+.a-zA-Z\\d]*):                           (?# 1: scheme)\n        (?:\n           ((?:[\\-_.!~*'()a-zA-Z\\d;?:@&=+$,]|%[a-fA-F\\d]{2})(?:[\\-_.!~*'()a-zA-Z\\d;/?:@&=+$,\\[\\]]|%[a-fA-F\\d]{2}"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:458
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:510
+
+         2  "%[a-fA-F\\d]{2}"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:37
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:514
+
+         2  "(?:[\\-_.!~*'()a-zA-Z\\d;/?:@&=+$,\\[\\]]|%[a-fA-F\\d]{2})*"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:362
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:364
+
+         2  "(?:[a-zA-Z0-9\\-.]|%\\h\\h)+"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:369
+
+         2  "(?:[a-zA-Z][\\-+.a-zA-Z\\d]*:(?:(?://(?:(?:(?:[\\-_.!~*'()a-zA-Z\\d;:&=+$,]|%[a-fA-F\\d]{2})*@)?(?:(?:[a-zA-Z0-9\\-.]|%\\h\\h)+|\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}|\\[(?:(?:[a-fA-F\\d]{1,4}:)*(?:[a-fA-F\\d]{1,4}|\\"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:456
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:509
+
+         2  "C"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         2  "FTP"
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         2  "HTTP"
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         2  "HTTPS"
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         2  "LDAP"
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         2  "LDAPS"
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         2  "\\d*"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:405
+
+         2  "\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/rfc2396_parser.rb:383
+
+         2  "body"
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         2  "fragment"
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         2  "no_proxy"
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         2  "port"
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         2  "query"
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         2  "scheme"
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         2  "userinfo"
+         2  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         1  "\u0000"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0001"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0002"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0003"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0004"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0005"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0006"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\a"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\b"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\t"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\t\r\n"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         1  "\n        ("
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         1  "\n        (?:\n          (?:\n            //\n            (?:\n              (?:("
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/rubygems/core_ext/kernel_require.rb:59
+
+         1  "\v"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\f"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\r"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u000E"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u000F"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0010"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0011"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0012"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0013"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0014"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0015"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0016"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0017"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0018"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u0019"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
+         1  "\u001A"
+         1  /Users/sam/.rbenv/versions/master/lib/ruby/2.6.0/uri/common.rb:345
+
