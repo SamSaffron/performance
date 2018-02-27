@@ -3,34 +3,40 @@ require 'oj'
 require 'json'
 require 'msgpack'
 
-hash = GC.stat
+str = "hello world"
 
 # puts hash.to_json
 # puts Oj.to_json(hash)
 # puts Msgpack.serialize
 
+state = JSON::Ext::Generator::State.new
 
 puts RUBY_VERSION
 
 Benchmark.ips do |p|
   p.report('json') do |times|
     while (times-=1) >= 0
-      hash.to_json
+      str.to_json
     end
   end
   p.report('json generate') do |times|
     while (times-=1) >= 0
-      JSON.generate(hash)
+      JSON.generate(str)
+    end
+  end
+  p.report('json via state') do |times|
+    while (times-=1) >= 0
+      state.generate(str)
     end
   end
   p.report('Oj') do |times|
     while (times-=1) >= 0
-      Oj.to_json(hash)
+      Oj.to_json(str)
     end
   end
   p.report('Message Pack') do |times|
     while (times-=1) >= 0
-      MessagePack.dump(hash)
+      MessagePack.dump(str)
     end
   end
 end
