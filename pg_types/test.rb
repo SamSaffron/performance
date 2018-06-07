@@ -23,7 +23,9 @@ conn.async_exec <<~SQL
     "money" money,
     "bytea" bytea,
     "interval" interval,
-    "bit" bit(10)
+    "bit" bit(10),
+    "json" json,
+    "bool[]" bool[]
 
   )
 SQL
@@ -46,7 +48,9 @@ INSERT INTO test_types (
   "money",
   "bytea",
   "interval",
-  "bit"
+  "bit",
+  "json",
+  "bool[]"
 )
 
 VALUES (
@@ -66,7 +70,9 @@ VALUES (
   100.2,
   E'\\\\xABCDEF',
   '1 year'::interval,
-  B'1010101'::bit(10)
+  B'1010101'::bit(10),
+  '{"a" : 77}',
+  '{true,false,true}'
 )
 SQL
 
