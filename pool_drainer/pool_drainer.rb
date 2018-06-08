@@ -26,6 +26,20 @@ class ActiveRecord::ConnectionAdapters::ConnectionPool
   # if idle_time is specified only connections idle for N seconds will be drained
   def drain(idle_time = nil, max_age = nil)
     synchronize do
+
+      if !@available
+        puts "WARNING reaper detected a dead connections pool!"
+        puts "referring paths to this object are:"
+        referring_paths(self).each do |path|
+          puts
+          path.each do |obj|
+            print obj.class
+            print " "
+          end
+        end
+        return
+      end
+
       @available.clear
       @connections.delete_if do |conn|
         try_drain?(conn, idle_time, max_age)
