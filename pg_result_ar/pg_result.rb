@@ -99,7 +99,7 @@ Topic.transaction do
                            end
   end
 
-  1000.times do |id|
+  2000.times do |id|
     topic[:id] = id
     Topic.create!(topic)
   end
@@ -123,27 +123,30 @@ module ActiveRecord::ConnectionAdapters::PostgreSQL::DatabaseStatements
     else
       result = exec_cache(sql, name, binds)
     end
-    # ideally we want to avoid this
-    types = {}
-    fields = result.fields
-    fields.each_with_index do |fname, i|
-      ftype = result.ftype i
-      fmod  = result.fmod i
-      types[fname] = get_oid_type(ftype, fmod, fname)
-    end
-
-    ActiveRecord::ConnectionAdapters::PostgreSQL::Result.new(result, types)
+    ActiveRecord::ConnectionAdapters::PostgreSQL::Result.new(result, self)
   end
 
   switch_exec_query :new
 end
 
-
 module ActiveRecord::ConnectionAdapters::PostgreSQL
   class Result
     include Enumerable
 
-    attr_reader :column_types
+    def column_types
+      @column_types ||=
+        begin
+          types = {}
+          fields = @pg_result.fields
+          fields.each_with_index do |fname, i|
+            ftype = @pg_result.ftype i
+            fmod  = @pg_result.fmod i
+            # need to make get_oid_type public
+            types[fname] = @adapter.send :get_oid_type, ftype, fmod, fname
+          end
+          types
+        end
+    end
 
     def length
       @length ||= @pg_result.cmd_tuples
@@ -169,10 +172,24 @@ module ActiveRecord::ConnectionAdapters::PostgreSQL
       end
     end
 
+    def last
+      return nil if length == 0
+      @pg_result[length-1]
+    end
 
-    def initialize(pg_result, types)
+    def first
+      return nil if length == 0
+      @pg_result[0]
+    end
+
+    def initialize(pg_result, adapter)
       @pg_result = pg_result
-      @column_types = types
+      @adapter = adapter
+    end
+
+    def rows
+      # hmmm why do we need this?
+      @rows ||= @pg_result.values
     end
 
     protected
@@ -212,9 +229,6 @@ def pluck(n)
   Topic.limit(n).pluck(:id, :title)
 end
 
-#ten_topics_select
-#top_1000_wasteful
-# exit
 #
 # MemoryProfiler.report do
 #   ten_topics_select
