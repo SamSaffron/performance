@@ -76,17 +76,21 @@ process_rss
 puts "done"
 
 
+# start RSS/limits
+# RSS is: 48628
+# malloc limit 16777216, old object malloc limit 16777216
+#
 # 100,000 bytes PG allocated 960 bytes
 # 100,000 byte string allocated 103296 bytes
 #
-# start RSS
-# RSS is: 48492
+# RSS/limits after allocating 10k 100,000 byte string
+# malloc limit 33554432, old object malloc limit 45373937
+# RSS is: 76984
 #
-# RSS after allocating 10k 100,000 byte string
-# RSS is: 97752
+# RSS/limits after allocating 10k 100,000 byte strings in libpq (and clearing)
+# malloc limit 33554432, old object malloc limit 45373937
+# RSS is: 79624
 #
-# RSS after allocating 10k 100,000 byte strings in libpq (and clearing)
-# RSS is: 100656
-#
-# RSS after allocating 10k 100,000 byte strings in libpq (and NOT clearing)
-# RSS is: 1141768
+# RSS/limits after allocating 10k 100,000 byte strings in libpq (and NOT clearing)
+# malloc limit 33554432, old object malloc limit 45373937
+# RSS is: 1120768
