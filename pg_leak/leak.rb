@@ -22,8 +22,23 @@ def process_rss
   puts 'RSS is: ' + `ps -o rss -p #{$$}`.chomp.split("\n").last
 end
 
+def malloc_limits
+  s = GC.stat
+  puts "malloc limit #{s[:malloc_increase_bytes_limit]}, old object malloc limit #{s[:oldmalloc_increase_bytes_limit]}"
+end
+
 conn = PG.connect(dbname: 'test_db')
 sql = "select repeat('x', $1)"
+
+# simulate a Rails app by long term retaining 400_000 objects
+$long_term = []
+400_000.times do
+  $long_term << +""
+end
+
+puts "start RSS/limits"
+process_rss
+malloc_limits
 
 count_malloc("100,000 bytes PG") do
   conn.exec(sql, [100_000])
@@ -33,22 +48,13 @@ count_malloc("100,000 byte string") do
   "x" * 100_000
 end
 
-# simulate a Rails app by long term retaining 400_000 objects
-$long_term = []
-400_000.times do
-  $long_term << +""
-end
-
-puts "start RSS"
-process_rss
-
 x = []
 10_000.times do |i|
   x[i%10]  = "x" * 100_000
 end
 
-
-puts "RSS after allocating 10k 100,000 byte string"
+puts "RSS/limits after allocating 10k 100,000 byte string"
+malloc_limits
 process_rss
 
 10_000.times do |i|
@@ -56,14 +62,16 @@ process_rss
   r.clear
 end
 
-puts "RSS after allocating 10k 100,000 byte strings in libpq (and clearing)"
+puts "RSS/limits after allocating 10k 100,000 byte strings in libpq (and clearing)"
+malloc_limits
 process_rss
 
 10_000.times do |i|
   x[i%10] = conn.exec(sql, [100_000])
 end
 
-puts "RSS after allocating 10k 100,000 byte strings in libpq (and NOT clearing)"
+puts "RSS/limits after allocating 10k 100,000 byte strings in libpq (and NOT clearing)"
+malloc_limits
 process_rss
 puts "done"
 
