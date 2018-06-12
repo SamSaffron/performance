@@ -133,6 +133,47 @@ module ActiveRecord::ConnectionAdapters::PostgreSQL
   class Result
     include Enumerable
 
+    class DeferredRow
+      def initialize(values, field_map)
+        @values = values
+        @field_map = field_map
+      end
+
+      def fetch(name)
+        if idx = @field_map[name]
+          @values[idx]
+        else
+          yield if block_given?
+        end
+      end
+
+      def [](name)
+        if idx = @field_map[name]
+          @values[idx]
+        else
+          nil
+        end
+      end
+    end
+
+    def fields
+      @fields ||= @pg_result.fields
+    end
+
+    def field_map
+      @field_map ||=
+        begin
+          i = 0
+          map = {}
+          f = fields
+          while i < f.length
+            map[f[i]] = i
+            i+=1
+          end
+          map
+        end
+    end
+
     def column_types
       @column_types ||=
         begin
@@ -154,9 +195,16 @@ module ActiveRecord::ConnectionAdapters::PostgreSQL
 
     def each
       if block_given?
+        fm = field_map
         i = 0
         while i < length
-          yield @pg_result[i]
+          values = []
+          j = 0
+          while j < fm.length
+            values << @pg_result.getvalue(i, j)
+            j += 1
+          end
+          yield DeferredRow.new(values, fm)
           i += 1
         end
       else
@@ -206,7 +254,6 @@ module ActiveRecord::ConnectionAdapters::PostgreSQL
     end
   end
 end
-
 
 def ten_topics_select
   r = []
