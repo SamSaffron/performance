@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker build . -t logs/generator
+docker rm -f logs_generator || echo "no container running yet"
+docker run -d --name logs_generator logs/generator
