@@ -1,0 +1,20 @@
+#!/bin/bash
+
+docker tag registry:2.7.1 localhost:5000/test:1
+docker push localhost:5000/test:1
+
+DIGEST=$(curl -I -H "Accept: application/vnd.docker.distribution.manifest.v2+json" http://localhost:5000/v2/test/manifests/1 | grep -Fi Docker-Content-Digest)
+
+DIGEST=${DIGEST:23:99}
+URL=http://localhost:5000/v2/test/manifests/$DIGEST
+URL=`echo $URL | xargs`
+echo $URL
+
+curl -X DELETE http://localhost:5000/v2/test/manifests/sha256:e09ed8c6c837d366a501f15dcb47939bbbb6242bf3886270834e2a0fa1555234
+
+#docker exec registry /bin/registry garbage-collect /etc/docker/registry/config.yml
+/home/sam/Source/docker-distribution/bin/registry garbage-collect /home/sam/Source/docker-distribution/bin/config.yml
+
+
+docker push localhost:5000/test:1
+docker pull localhost:5000/test:1
