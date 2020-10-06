@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "help" | sudo socat stdio run/admin.sock
+echo "set server back1/web1 addr 172.18.0.1 port 5000 state ready" | sudo socat stdio run/admin.sock
+echo "enable server back1/web1" | sudo socat stdio run/admin.sock

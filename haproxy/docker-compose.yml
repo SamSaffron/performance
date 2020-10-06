@@ -1,0 +1,24 @@
+services:
+  web1:
+    image: ruby
+    command: ruby -run -ehttpd . -p5000
+    ports:
+      - "5000:5000"
+  web2:
+    image: ruby
+    command: ruby -run -ehttpd . -p5001
+    ports:
+      - "5001:5001"
+  haproxy:
+    image: haproxy
+    ports:
+      - "4000:4000"
+      - "4001:4001"
+    volumes:
+      - type: bind
+        source: ./haproxy.cfg
+        target: /usr/local/etc/haproxy/haproxy.cfg
+      - type: bind
+        source: ./run
+        target: /run
+
