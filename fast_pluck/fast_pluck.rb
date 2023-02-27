@@ -128,76 +128,66 @@ end
         count -= 1
       end
     end
+    b.compare!
   end
 end
 
 # sam@arch fast_pluck % ruby fast_pluck.rb
 # Warming up --------------------------------------
-# fast pluck 1 items   927.000  i/100ms
-#      pluck 1 items   770.000  i/100ms
+#   fast pluck 1 items   744.000  i/100ms
+#        pluck 1 items   786.000  i/100ms
 # Calculating -------------------------------------
-# fast pluck 1 items      6.554k (± 6.3%) i/s -     33.372k in   5.108559s
-#      pluck 1 items      6.841k (±11.1%) i/s -     33.880k in   5.008220s
+#   fast pluck 1 items      8.493k (± 5.6%) i/s -     42.408k in   5.010302s
+#        pluck 1 items      7.364k (± 8.9%) i/s -     36.942k in   5.060554s
+
+# Comparison:
+#   fast pluck 1 items:     8493.3 i/s
+#        pluck 1 items:     7364.3 i/s - same-ish: difference falls within error
+
 # Warming up --------------------------------------
-# fast pluck 10 items   904.000  i/100ms
-#     pluck 10 items   769.000  i/100ms
+#  fast pluck 10 items   796.000  i/100ms
+#       pluck 10 items   706.000  i/100ms
 # Calculating -------------------------------------
-# fast pluck 10 items      8.404k (± 9.5%) i/s -     42.488k in   5.111812s
-#     pluck 10 items      7.036k (± 8.7%) i/s -     35.374k in   5.068965s
+#  fast pluck 10 items      8.645k (± 4.2%) i/s -     43.780k in   5.075225s
+#       pluck 10 items      7.482k (± 3.2%) i/s -     37.418k in   5.006443s
+
+# Comparison:
+#  fast pluck 10 items:     8644.5 i/s
+#       pluck 10 items:     7481.9 i/s - 1.16x  slower
+
 # Warming up --------------------------------------
-# fast pluck 100 items   742.000  i/100ms
-#    pluck 100 items   466.000  i/100ms
+# fast pluck 100 items   579.000  i/100ms
+#      pluck 100 items   443.000  i/100ms
 # Calculating -------------------------------------
-# fast pluck 100 items      7.295k (± 2.9%) i/s -     37.100k in   5.090454s
-#    pluck 100 items      4.679k (± 4.1%) i/s -     23.766k in   5.087828s
-# Warming up --------------------------------------
-# fast pluck 1000 items
-#                      299.000  i/100ms
-#   pluck 1000 items   119.000  i/100ms
-# Calculating -------------------------------------
-# fast pluck 1000 items
-#                         2.807k (±11.8%) i/s -     14.053k in   5.107343s
-#   pluck 1000 items      1.085k (± 7.5%) i/s -      5.474k in   5.070442s
-# Warming up --------------------------------------
-# fast pluck 10000 items
-#                       48.000  i/100ms
-#  pluck 10000 items    13.000  i/100ms
-# Calculating -------------------------------------
-# fast pluck 10000 items
-#                       444.380  (±16.4%) i/s -      2.160k in   5.072202s
-#  pluck 10000 items    137.700  (± 5.1%) i/s -    689.000  in   5.021911s
-# sam@arch fast_pluck % ruby fast_pluck.rb
-# Warming up --------------------------------------
-# fast pluck 1 items   803.000  i/100ms
-#      pluck 1 items   788.000  i/100ms
-# Calculating -------------------------------------
-# fast pluck 1 items      9.067k (± 2.2%) i/s -     45.771k in   5.050399s
-#      pluck 1 items      8.001k (± 1.2%) i/s -     40.188k in   5.023479s
-# Warming up --------------------------------------
-# fast pluck 10 items   876.000  i/100ms
-#     pluck 10 items   642.000  i/100ms
-# Calculating -------------------------------------
-# fast pluck 10 items      8.613k (± 4.4%) i/s -     43.800k in   5.095413s
-#     pluck 10 items      7.512k (± 4.7%) i/s -     37.878k in   5.055772s
-# Warming up --------------------------------------
-# fast pluck 100 items   644.000  i/100ms
-#    pluck 100 items   362.000  i/100ms
-# Calculating -------------------------------------
-# fast pluck 100 items      7.094k (± 3.0%) i/s -     36.064k in   5.088190s
-#    pluck 100 items      4.626k (± 3.0%) i/s -     23.168k in   5.013261s
+# fast pluck 100 items      7.111k (± 4.7%) i/s -     35.898k in   5.060275s
+#      pluck 100 items      4.628k (± 3.1%) i/s -     23.479k in   5.078414s
+
+# Comparison:
+# fast pluck 100 items:     7111.3 i/s
+#      pluck 100 items:     4627.9 i/s - 1.54x  slower
+
 # Warming up --------------------------------------
 # fast pluck 1000 items
-#                      276.000  i/100ms
-#   pluck 1000 items   114.000  i/100ms
+#                        275.000  i/100ms
+#     pluck 1000 items   114.000  i/100ms
 # Calculating -------------------------------------
 # fast pluck 1000 items
-#                         2.801k (± 6.0%) i/s -     14.076k in   5.053027s
-#   pluck 1000 items      1.174k (± 2.0%) i/s -      5.928k in   5.050410s
+#                           2.739k (± 9.4%) i/s -     13.750k in   5.081272s
+#     pluck 1000 items      1.152k (± 3.6%) i/s -      5.814k in   5.054777s
+
+# Comparison:
+# fast pluck 1000 items:     2739.2 i/s
+#     pluck 1000 items:     1151.7 i/s - 2.38x  slower
+
 # Warming up --------------------------------------
 # fast pluck 10000 items
-#                       42.000  i/100ms
-#  pluck 10000 items    13.000  i/100ms
+#                         41.000  i/100ms
+#    pluck 10000 items    14.000  i/100ms
 # Calculating -------------------------------------
 # fast pluck 10000 items
-#                       421.343  (± 4.5%) i/s -      2.142k in   5.095367s
-#  pluck 10000 items    128.693  (± 9.3%) i/s -    650.000  in   5.099353s
+#                         338.593  (±25.4%) i/s -      1.599k in   5.060325s
+#    pluck 10000 items    110.440  (± 3.6%) i/s -    560.000  in   5.075306s
+
+# Comparison:
+# fast pluck 10000 items:      338.6 i/s
+#    pluck 10000 items:      110.4 i/s - 3.07x  slower
